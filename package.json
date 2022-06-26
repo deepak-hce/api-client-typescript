@@ -1,0 +1,29 @@
+{
+  "name": "api-client-typescript",
+  "version": "1.0.0",
+  "description": "api client for frontend application",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deepak-hce/api-client-typescript.git"
+  },
+  "keywords": [
+    "api-client"
+  ],
+  "author": "deepak kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deepak-hce/api-client-typescript/issues"
+  },
+  "homepage": "https://github.com/deepak-hce/api-client-typescript#readme",
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
+}
