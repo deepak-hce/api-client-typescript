@@ -17,7 +17,10 @@ export class Cache {
     const hashHex = hashArray
       .map((b) => b.toString(16).padStart(2, "0"))
       .join("");
-    return hashHex;
+
+    const id = "id" + Math.random().toString(16).slice(2);
+
+    return id + hashHex;
   }
 
   async handleCache(apiInfo: IHttpRequest, response: any, prefix: string) {
