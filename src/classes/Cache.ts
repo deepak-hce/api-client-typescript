@@ -18,9 +18,15 @@ export class Cache {
       .map((b) => b.toString(16).padStart(2, "0"))
       .join("");
 
-    const id = "id" + Math.random().toString(16).slice(2);
+    var result = "";
+    var characters =
+      "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    var charactersLength = characters.length;
+    for (var i = 0; i < length; i++) {
+      result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    }
 
-    return id + hashHex;
+    return result + hashHex;
   }
 
   async handleCache(apiInfo: IHttpRequest, response: any, prefix: string) {
