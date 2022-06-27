@@ -4,7 +4,3 @@ export const ApiClient = {
     create: new Checks().create,
   },
 };
-
-async function fetch() {
-  const result = await ApiClient.checks.create();
-}
