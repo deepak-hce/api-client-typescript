@@ -7,9 +7,4 @@ export const ApiClient = {
 
 async function fetch() {
   const result = await ApiClient.checks.create();
-  console.log(result);
 }
-
-setInterval(() => {
-  fetch();
-}, 2000);

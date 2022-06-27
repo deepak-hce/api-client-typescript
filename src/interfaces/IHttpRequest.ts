@@ -4,6 +4,7 @@ export interface IHttpRequest {
   input: object;
   hideResponseMsg?: boolean;
   headers?: IExternalApiHeaders[];
+  isCachable?: boolean;
 }
 
 export interface IExternalApiHeaders {
